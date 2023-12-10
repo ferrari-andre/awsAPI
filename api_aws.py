@@ -26,3 +26,5 @@ if response.status_code == 200:
         output.write(decoded_image)
 else:
     print("Ai babou!")
+    #çlk\sjdhefgçlksjgdçwiuegfçWI
+    #\KSDJHFGLSidhgfçlisuYDGFÇLSDI
