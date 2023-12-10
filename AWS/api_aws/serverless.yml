@@ -1,0 +1,21 @@
+service: api_awws
+
+
+provider:
+  name: aws
+  region: us_east-2
+  runtime: python3.11
+  stage: dev
+
+
+functions:
+  alou:
+    handler: src/item.alouAWS
+    runtime: python3.11
+    memorySize: 256
+    timeout: 20
+    events:
+      - http:
+        path: alou
+        method: get
+        integration: lambda
